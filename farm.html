@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The Farm</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+<body>
+
+
+
+		<div class="navbar">
+			<div class="menu" id="menu_about"><a class="men_hov" href="about.html">About</a></div>
+			<div class="menu" id="menu_menu"><a class="men_hov" href="menu.html">Menu</a></div>
+			<div class="menu" id="menu_locations"><a class="men_hov" href="locations.html">Locations</a></div>
+			<div class="menu" id="menu_vpd"><img id="logo_img" src="VPD_original.png"></div>
+			<div class="menu" id="menu_story"><a class="men_hov" href="our_story.html">Our Story</a></div>
+			<div class="menu" id="menu_farm"><a class="men_hov" href="index.html" id="home_button">Home</a></div>
+			<div class="menu" id="menu_media"><a class="men_hov" href="media.html">Media</a></div>
+		</div>
+
+
+	<div class="section_container">
+		<div class="section_header"><h1>The Farm</h1></div>
+		<div class="section_header_img"><img id="farm_main_img" src="farm/farm_main.jpg"></div>
+		<div class="section_paragraph"><p id="section_p">There is something deeply satisfying about being able to grow your own food. Especially so for a food business owner. To be able to create delicious pizza from produce that has been grown, watered, and tended to in your garden, and hand-picked on that same morning is particularly fulfilling.
+		<br>
+		During the summers Village Pizza was self-sufficient in organic fresh basil and Cavolo Nero kale. There was also constant supply of their own organic cherry tomatoes, rosemary, thyme, oregano, curly kale and cabbage. Free range eggs from our lovely hens: Maciek, Chicken Noodle, Saoirse, Skinny Neck and Mango would also frequently end up on our pizzas too.
+		<br>
+		Wild flowers that grew freely in our garden were put together into beautiful bouquets that adorned our little truck. They were lovingly assembled by our very talented front of house Rob-who just happened to also be a very gifted florist :) 
+		<br>
+		Sadly, 3 years into our urban farm adventure the dream had to be let go of. At the end of 2019 the land where the farm stood was sold to be built on-and so the farm had to go. However, the dream lives on and we are already thinking of growing again soon.
+		</p> 
+		</div>
+		<div class="section_gallery">
+			<img class="imgs" id="farm_img1" src="farm/farm1.jpg">
+			<img class="imgs" id="farm_img2" src="farm/farm2.jpg">
+			<img class="imgs" id="farm_img3" src="farm/farm3.jpg">
+			<img class="imgs" id="farm_img4" src="farm/farm4.jpg">
+			<img class="imgs" id="farm_img5" src="farm/farm5.jpg">
+			<img class="imgs" id="farm_img6" src="farm/farm6.jpg">
+			<img class="imgs" id="farm_img7" src="farm/farm7.jpg">
+			<img class="imgs" id="farm_img8" src="farm/farm8.jpg">
+		</div>
+
+		<div id="modal_id" class="modal">
+  			<span class="close">&times;</span>
+  			<img class="modal-content" id="inside_modal">
+		</div>
+
+		<div class="social">
+			<a id="fb" href="https://www.facebook.com/villagepizzadublin/">
+			<img id="fb-img" title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="50" height="50" />
+			</a>
+			<a id="insta" href="https://www.instagram.com/villagepizza_dublin/?hl=en">
+			<img id="inst-img" title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="50" height="50" />
+			</a>
+		</div>
+			<div class="contact_us">
+				<ul style="list-style-type:none;">
+  				<li>Mobile: 0851063031</li>
+  				<li>Email: vpd@gmail.com</li>
+				</ul> 
+			</div>
+			<div class="design">
+				<ul style="list-style-type:none;">
+  				<li>Designed by:</li>
+  				<li>Go-Morra Projects</li>
+				</ul> 
+			</div>
+	</div>
+
+	
+<script>
+	let modal = document.getElementById("modal_id");
+
+	let imgs = document.getElementsByClassName("imgs");
+	let modalImg = document.getElementById("inside_modal");
+	for (let i = 0; i < imgs.length; i++) {
+	  imgs[i].addEventListener("click", function () {
+	    modal.style.display = "block";
+	    modalImg.src = this.src;
+	  });
+	}
+
+	var span = document.getElementsByClassName("close")[0];
+	
+	span.onclick = function() { 
+	  modal.style.display = "none";
+}
+
+	var rotate = document.getElementById( 'fb-img' );
+
+	rotate.addEventListener( 'mouseover', function () {
+    
+    this.className = 'over';
+    
+	}, false );
+
+	rotate.addEventListener( 'mouseout', function () {
+    
+    var rotate = this;
+    
+    rotate.className = 'out';
+    window.setTimeout( function () { rotate.className = '' }, 550 );
+    
+	}, false );
+
+	var rotate = document.getElementById( 'inst-img' );
+
+	rotate.addEventListener( 'mouseover', function () {
+    
+    this.className = 'over';
+    
+	}, false );
+
+	rotate.addEventListener( 'mouseout', function () {
+    
+    var rotate = this;
+    
+    rotate.className = 'out';
+    window.setTimeout( function () { rotate.className = '' }, 550 );
+    
+	}, false );
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Final Project</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="responsiveslides.css">
+  	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  	<script src="responsiveslides.min.js"></script>
+  
+	  <script>
+	   
+	    $(function () {
+
+	  
+	      $("#slider1").responsiveSlides({
+	        width: 1080,
+	        speed: 600
+	      });
+	    });
+
+	  </script>
+
+	</head>
+
+<body>
+
+
+
+		<div class="navbar">
+				<div class="menu" id="menu_about"><a class="men_hov" href="about.html">About</a></div>
+				<div class="menu" id="menu_menu"><a class="men_hov" href="menu.html">Menu</a></div>
+				<div class="menu" id="menu_locations"><a class="men_hov" href="locations.html">Locations</a></div>
+				<div class="menu" id="menu_vpd"><img id="logo_img" src="VPD_original.png"></div>
+				<div class="menu" id="menu_story"><a class="men_hov" href="our_story.html">Our Story</a></div>
+				<div class="menu" id="menu_farm"><a class="men_hov" href="farm.html">The Farm</a></div>
+				<div class="menu" id="menu_media"><a class="men_hov" href="media.html">Media</a></div>
+		</div>
+
+
+<div id="master_container">
+
+			
+			<div class="karuzela">
+			    <ul class="rslides" id="slider1">
+      			<li><img src="carousel/flowers.png" alt=""></li>
+      			<li><img src="carousel/dough.jpg" alt=""></li>
+      			<li><img src="carousel/oven.png" alt=""></li>
+      			<li><img src="carousel/pizza_oven.jpg" alt=""></li>
+      			<li><img src="carousel/pizza.jpg" alt=""></li>
+            	<li><img src="carousel/sharing.png" alt=""></li>
+            	<li><img src="carousel/eating.jpg" alt=""></li>
+   				</ul>
+
+			</div>
+			<div class="motto">
+				<h1>Our current location: Belfry, 36 StonyBatter, on n' off.</h1>
+			</div>
+			
+			
+			<div class="social">
+					<a id="fb" href="https://www.facebook.com/villagepizzadublin/">
+					<img id="fb-img" title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="50" height="50" />
+					</a>
+					<a id="insta" href="https://www.instagram.com/villagepizza_dublin/?hl=en">
+					<img id="inst-img" title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="50" height="50" />
+					</a>
+			</div>
+			<div class="contact_us">
+				<ul style="list-style-type:none;">
+  				<li>Mobile: 0851063031</li>
+  				<li>Email: vpd@gmail.com</li>
+				</ul> 
+			</div>
+			<div class="design">
+				<ul style="list-style-type:none;">
+  				<li>Designed by:</li>
+  				<li>Go-Morra Projects</li>
+
+				</ul> 
+			</div>
+	</div>
+	<script>
+		var rotate = document.getElementById( 'fb-img' );
+
+		rotate.addEventListener( 'mouseover', function () {
+	    
+	    this.className = 'over';
+	    
+		}, false );
+
+		rotate.addEventListener( 'mouseout', function () {
+	    
+	    var rotate = this;
+	    
+	    rotate.className = 'out';
+	    window.setTimeout( function () { rotate.className = '' }, 550 );
+	    
+		}, false );
+
+		var rotate = document.getElementById( 'inst-img' );
+
+		rotate.addEventListener( 'mouseover', function () {
+	    
+	    this.className = 'over';
+	    
+		}, false );
+
+		rotate.addEventListener( 'mouseout', function () {
+	    
+	    var rotate = this;
+	    
+	    rotate.className = 'out';
+	    window.setTimeout( function () { rotate.className = '' }, 550 );
+	    
+		}, false );
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

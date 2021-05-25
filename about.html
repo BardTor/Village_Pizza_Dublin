@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>About</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+<body>
+
+
+
+	<div class="navbar">
+		<div class="menu" id="menu_about"><a class="men_hov" href="index.html" id="home_button">Home</a></div>
+		<div class="menu" id="menu_menu"><a class="men_hov" href="menu.html">Menu</a></div>
+		<div class="menu" id="menu_locations"><a class="men_hov" href="locations.html">Locations</a></div>
+		<div class="menu" id="menu_vpd"><img id="logo_img" src="VPD_original.png"></div>
+		<div class="menu" id="menu_story"><a class="men_hov" href="our_story.html">Our Story</a></div>
+		<div class="menu" id="menu_farm"><a class="men_hov" href="farm.html">The Farm</a></div>
+		<div class="menu" id="menu_media"><a class="men_hov" href="media.html">Media</a></div>
+	</div>
+
+
+	<div class="section_container" id="section_container_about">
+		<div class="section_header"><h1>About</h1></div>
+		<div class="section_header_img"><img id="about_main_img" src="about/about_main.jpg"></div>
+		<div class="section_paragraph"><p id="section_p">We make 48-hour, fermented, wood fired Neapolitan style pizzas. We like to keep the pies close to the fire, which combined with the long proofing time, gives our pizzas plenty of beautiful charr. The slight bitter note of the charr compliments the sweetness and acidity of the tomatoes and creaminess of the mozzarella so well
+		<br>
+		We aim to use fresh and seasonal, Irish grown produce as much as possible. We even grow some of it ourselves. 
+		<br>
+		Being veggie-saurus’ (raaarrrrr) we make our menu predominantly vegan and vegetarian. We do want to have something for everybody however, so we also have two meat pizzas on our menu. We only use the finest, Irish free-range charcuterie from the lovely folk at the Wooded Pig.
+		</p> 
+		</div>
+		<div class="section_gallery">
+			<img class="imgs" id="about_img1" src="about/about1.jpg">
+			<img class="imgs" id="about_img2" src="about/about2.jpg">
+			<img class="imgs" id="about_img3" src="about/about3.jpg">
+			<img class="imgs" id="about_img4" src="about/about4.jpg">
+			<img class="imgs" id="about_img5" src="about/about5.jpg">
+			<img class="imgs" id="about_img6" src="about/about6.jpg">
+			<img class="imgs" id="about_img7" src="about/about7.jpg">
+			<img class="imgs" id="about_img8" src="about/about8.jpg">
+		</div>
+
+		<div id="modal_id" class="modal">
+  			<span class="close">&times;</span>
+  			<img class="modal-content" id="inside_modal">
+		</div>
+
+		<div class="social">
+			<a id="fb" href="https://www.facebook.com/villagepizzadublin/">
+			<img id="fb-img" title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="50" height="50" />
+			</a>
+			<a id="insta" href="https://www.instagram.com/villagepizza_dublin/?hl=en">
+			<img id="inst-img" title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="50" height="50" />
+			</a>
+		</div>
+			<div class="contact_us">
+				<ul style="list-style-type:none;">
+  				<li>Mobile: 0851063031</li>
+  				<li>Email: vpd@gmail.com</li>
+				</ul> 
+			</div>
+			<div class="design">
+				<ul style="list-style-type:none;">
+  				<li>Designed by:</li>
+  				<li>Go-Morra Projects</li>
+				</ul> 
+			</div>
+	</div>
+
+	
+<script>
+	let modal = document.getElementById("modal_id");
+
+	let imgs = document.getElementsByClassName("imgs");
+	let modalImg = document.getElementById("inside_modal");
+	for (let i = 0; i < imgs.length; i++) {
+	  imgs[i].addEventListener("click", function () {
+	    modal.style.display = "block";
+	    modalImg.src = this.src;
+	  });
+	}
+
+	var span = document.getElementsByClassName("close")[0];
+
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+
+	var rotate = document.getElementById( 'fb-img' );
+
+	rotate.addEventListener( 'mouseover', function () {
+    
+    this.className = 'over';
+    
+	}, false );
+
+	rotate.addEventListener( 'mouseout', function () {
+    
+    var rotate = this;
+    
+    rotate.className = 'out';
+    window.setTimeout( function () { rotate.className = '' }, 550 );
+    
+	}, false );
+
+	var rotate = document.getElementById( 'inst-img' );
+
+	rotate.addEventListener( 'mouseover', function () {
+    
+    this.className = 'over';
+    
+	}, false );
+
+	rotate.addEventListener( 'mouseout', function () {
+    
+    var rotate = this;
+    
+    rotate.className = 'out';
+    window.setTimeout( function () { rotate.className = '' }, 550 );
+    
+	}, false );
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
